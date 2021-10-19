@@ -1,0 +1,134 @@
+/*links*/
+a {
+    color: #5c2781;
+}
+
+/*remove form currency switch message*/
+.give-currency-switcher-msg {
+  display:none;
+}
+
+/*remove border top of tabs*/
+ul.et_pb_tabs_controls:after{
+  border-top:none 
+}
+
+/*font form*/
+[id*=give-form]{
+    font-family:Rubik !important;
+  }
+
+/*titles of section*/
+legend {
+    border-bottom: none !important;
+    color: #5c2781;
+    font-weight: 600;
+    font-size: 1.5em !important;
+    padding-top:4vh !important
+}
+
+/*inputs of form*/
+[id*=give-form] input {
+    border:none !important;
+    border-bottom: 1.5px solid #5c2781 !important;
+}
+
+[id*=give-form] input:focus{
+    background-color: #5c27811a !important;
+    color: #5c2781 !important;
+    border-bottom: none !important;
+}
+
+  /*checkboxes and radio*/
+  [id*=give-form] .give-recurring-donors-choice input[type="checkbox"],
+  form[id*=give-form] #give-gateway-radio-list>li input[type=radio]{
+      height: 20px;
+      width: 20px;
+  }
+
+/*donation amount at the top*/
+  input#give-amount {
+    border: 1.5px solid #5c2781 !important;
+}
+
+/*donations preset*/
+.give-donation-total-label,
+.give-final-total-amount,
+#give-amount
+ {
+    float: none !important;
+    padding: 12px 16px !important;
+}
+
+.give-donation-amount,
+.give-donation-total-label,
+.give-final-total-amount,
+#give-amount{
+    min-height:55px
+}
+
+/*buttons on the form*/
+button.give-donation-level-btn {
+      background: #5c2781;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      font-size: 20px;
+ 		 	padding: 9px 20px !important  
+  }  
+
+
+button.give-donation-level-btn.give-btn:hover,
+#give-purchase-button:hover{
+    box-shadow: #00000075 2px 2px 10px;
+    border: none !important;
+}
+
+
+button.give-donation-level-btn.give-btn:hover {
+   	padding: 12px 40px 12px 20px !important;
+}
+
+/*arrow after butoon*/
+input#give-purchase-button:after, 
+button.give-donation-level-btn.give-btn:after{
+		opacity: 0;
+    font-size: 25px;
+    line-height: 1em;
+    content: "\35" !important;
+    transition: all 300ms ease 0ms;
+    font-family: ETmodules!important;
+    position: absolute;
+    margin-left: -1em;
+}
+
+input#give-purchase-button:hover:after, 
+button.give-donation-level-btn.give-btn:hover:after{
+   margin-left: 0;
+  opacity: 1;
+}
+
+
+
+/*active focus label*/
+label.give-label.give-fl-label {
+    color: #5c2781 !important;
+}
+
+/*remove drop down currency*/
+select.give-cs-select-currency.give-cs-mini-dropdown{
+  display:none;
+}
+
+span.give-currency-symbol.give-currency-position-before.give-cs-mini-dropdown-icon:before{
+  content:none
+}
+
+/*curreny section*/
+span.give-currency-symbol.give-currency-position-before{
+    min-height: 55px;
+    display: flex;
+    align-items: center;
+  	border: 1.5px solid #5c2781!important;
+    border-right: none !important;
+}
